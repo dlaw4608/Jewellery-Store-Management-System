@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment1draft1.Controllers.CaseController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" style="-fx-background-color: gold;" VBox.vgrow="ALWAYS">
+      <children>
+            <Button layoutX="263.0" layoutY="116.0" mnemonicParsing="false" onAction="#addDisplayCase" text="Add Display Case" />
+        <Button layoutX="21.0" layoutY="116.0" mnemonicParsing="false" onAction="#resetCase" text="Reset List" />
+            <TextField fx:id="txtid" layoutX="29.0" layoutY="58.0" />
+            <Text layoutX="264.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Case"><font>
+                <Font size="21.0" />
+            </font></Text>
+            <CheckBox fx:id="lighttype" layoutX="262.0" layoutY="62.0" mnemonicParsing="false" text="Lighting ON/OFF" />
+            <ChoiceBox fx:id="walltype" layoutX="457.0" layoutY="58.0" prefWidth="150.0" />
+            <ListView fx:id="listview" layoutX="21.0" layoutY="157.0" prefHeight="200.0" prefWidth="598.0" style="-fx-background-color: white;" />
+            <Button layoutX="509.0" layoutY="366.0" mnemonicParsing="false" onAction="#gotoaddDisplayTray" text="Add Display Tray" />
+            <Text layoutX="29.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Case ID:" />
+            <Text layoutX="457.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Case Type:" />
+          
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
